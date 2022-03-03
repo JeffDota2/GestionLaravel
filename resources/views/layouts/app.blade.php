@@ -43,6 +43,27 @@
 
                     </ul>
                     @endif
+
+                    @if(Auth::check())
+                    <ul class="navbar-nav me-auto">
+                        <a class="nav-link" href="{{ route('educaciones.index') }}">{{ __('Formacion Academica') }}</a>
+
+                    </ul>
+                    @endif
+
+                    @if(Auth::check())
+                    <ul class="navbar-nav me-auto">
+                        <a class="nav-link" href="{{ route('formaciones.index') }}">{{ __('Experiencia Laboral') }}</a>
+
+                    </ul>
+                    @endif
+
+                    @if(Auth::check())
+                    <ul class="navbar-nav me-auto">
+                        <a class="nav-link" href="{{ route('referencias.index') }}">{{ __('Referecias Personales') }}</a>
+
+                    </ul>
+                    @endif
                     <!-- Right Side Of Navbar -->
                     <ul class="navbar-nav ms-auto">
                         <!-- Authentication Links -->

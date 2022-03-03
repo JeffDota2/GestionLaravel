@@ -1,7 +1,7 @@
 @extends('layouts.app')
 
 @section('template_title')
-<h2> Cargar Datos Personales </h2>
+    Create Referencia
 @endsection
 
 @section('content')
@@ -13,13 +13,13 @@
 
                 <div class="card card-default">
                     <div class="card-header">
-                        <span class="card-title"><h2> Cargar Datos Personales </h2></span>
+                        <span class="card-title">Create Referencia</span>
                     </div>
                     <div class="card-body">
-                        <form method="POST" action="{{ route('datos.store') }}"  role="form" enctype="multipart/form-data">
+                        <form method="POST" action="{{ route('referencias.store') }}"  role="form" enctype="multipart/form-data">
                             @csrf
 
-                            @include('dato.form')
+                            @include('referencia.form')
 
                         </form>
                     </div>
